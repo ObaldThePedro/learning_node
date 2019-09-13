@@ -4,6 +4,7 @@ This repository is based on a Udemy Course that will help me diving in node.js a
 
 Content of the course - (As I go along the course I will add the main takeaways from the current module I am in)
 - Event Loop
+
   The event loop is what allows node.js to do non-blocking operations.
   When node.js has multiple operations operating in the background and one of them finishes, this operation will be added to a poll queue that will be executed later in time, so we prevent blocking operations.
   
@@ -14,9 +15,11 @@ Content of the course - (As I go along the course I will add the main takeaways 
   The event loop in node js keeps on running as long there is event listeners registered. When we create server with node.js we create an on going event listener as the servers keeps waiting for requests.
 
 - Installing 3rd party packages to accelerate the development workflow.
+
   nodemon - allows a developer to sync any changes with the server running when the file has changed and saved.
   
-- Express.js (framework for node.js) 
+- Express.js (framework for node.js)
+
   It also accelerate the development workflow.
   Express.js is all about middleware. Middleware means that an incoming request is funnelled through a set o functions by express.js. Instead of having a single request handler, we will actually have middleware functions that will be useful to write  the logic in our code.
   
