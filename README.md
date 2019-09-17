@@ -16,7 +16,7 @@ Content of the course - (As I go along the course I will add the main takeaways 
 
 - Installing 3rd party packages to accelerate the development workflow.
 
-  nodemon - allows a developer to sync any changes with the server running when the file has changed and saved.
+  nodemon - allows a developer to sync any changes with the server running when the file is changed and saved.
   
 - Express.js (framework for node.js)
 
