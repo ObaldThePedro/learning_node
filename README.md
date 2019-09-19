@@ -30,7 +30,7 @@ Content of the course - (As I go along the course I will add the main takeaways 
  - Parsing incoming requests (Express.js)
  
 In order to parse incoming requests we need to add a parser by adding a middleware function. This middleware function needs to sit on top of the program as the parsing should happen no matter where the request is made.
-By having app.use as a middleware function we are allowing any sort of requests to trigger this function. If we want to be more selective and for example add an input field that sends a POST request to a specific URL, perhaps we don’t want to trigger that URL with a GET request.
+By having app.use() as a middleware function we are allowing any sort of requests to trigger this function. If we want to be more selective and for example add an input field that sends a POST request to a specific URL, perhaps we don’t want to trigger that URL with a GET request.
 That’s where express comes handy. Instead of doing a conditional expression to trigger a specific URL (pure node.js),we use Express built-in functions that allow us to specify what kind of HTTP requests will trigger a specific url.
 Express allows us:
 .use() - allows all HTTP requests
