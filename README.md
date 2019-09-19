@@ -43,3 +43,8 @@ Express allows us:
 .patch() - allows patch requests.
 
 .delete() - allows delete requests.
+
+- Express Router
+
+express.Router() allows to split our code logic, or middleware functions in different files, by creating a router as a module which can be imported into the main application. express.Router() it is often referred as a mini-app.
+
