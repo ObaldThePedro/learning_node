@@ -48,3 +48,6 @@ Express allows us:
 
 express.Router() allows to split our code logic, or middleware functions in different files, by creating a router as a module which can be imported into the main application. express.Router() it is often referred as a mini-app.
 
+The order in which we structure our middleware functions matter if we have middleware functions that use the .use() method.
+If we have other middleware functions that take any other method than .use() then doesn’t matter the way we structure our program as those functions use regex to match the specified URL path.
+
