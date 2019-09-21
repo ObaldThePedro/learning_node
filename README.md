@@ -51,3 +51,9 @@ express.Router() allows to split our code logic, or middleware functions in diff
 The order in which we structure our middleware functions matter if we have middleware functions that use the .use() method.
 If we have other middleware functions that take any other method than .use() then doesn’t matter the way we structure our program as those functions use regex to match the specified URL path.
 
+Introducing the MVC model with Views
+
+We’ve been able to construct some logic in filtering the paths and display html elements created in the middleware functions, however that becomes cumbersome as we would have to hardcode html in every middleware function, and it would be even more messy to style it, also our code would look very disorganised. It is a good idea to split the work in our application, so that we can distinguish where it lies the logic for our application, where it is displayed, and so on…This way we can easily find bugs.
+In order to get a whole html page displayed to the user, then we will have to use a concept called view, which is one of the three concepts of the MVC model.
+node.js provides us a method called sendFile which can be used to send an html file to the client once a request is made to a specific path url.
+However sendFile cannot be called solely on its own, it has a dependency on a in built module called path. If we were to give the path of a html using purely .sendFile method, then the system would look for a html in the root folder of the operating system. To prevent that and get the file that is in our project folder we use the path module. 
