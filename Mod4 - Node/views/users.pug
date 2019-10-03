@@ -1,0 +1,9 @@
+extends layouts/main-layout
+
+block content
+    h1 Users
+    
+    main
+        each user in users
+            p #{user.name}
+
