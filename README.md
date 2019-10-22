@@ -70,11 +70,15 @@ With ES6 new features we can use a class to represent a model,instead of the tra
 
 It connects the View and Model, and it should only be responsible for the two to communicate in both ways.
 
--- Databases
+- Databases
 
 In SQL databases we have tables, and each table represents an entity. Each entity will have attributes, those attributes represent the data that we want to store about an instance of an entity.
 In NoSQL databases we have collections, which can be much similar to tables in SQL databases, but the way they are structured is different from a SQL database. For example, we can store multiple documents with different pieces of information in a noSQL database, which is not possible in a SQL database.
 
 SQL databases have a fixed schema or follow a predefined schema, whereas noSQL have a dynamic schema.
 
-NoSQL databases are horizontally scalable, which means that it is possible to handle more traffic by adding more servers to a noSQL database. Without the need to do join tables the efficiency and performance of noSQL databases is taken in consideration for large datasets.
+NoSQL databases are horizontally scalable, which means that it is possible to handle more traffic by adding more servers to a noSQL database. Without the need to do join tables the efficiency and performance of noSQL databases is taken in consideration for large datasets. 
+
+-- Which type of database to choose?
+
+So far noSQL databases in comparison to SQL databases can be more advantageous to use, however the decision to use one over the other is dependant on what kind of data we want to store. If we want to persist relations between data, make complex queries, have high transactions and we know that the data will not change so often, then SQL is the way to go. There is no right answer for which one is best, but there is a right answer for which one is best taken in consideration the data model we require.
