@@ -84,4 +84,5 @@ NoSQL databases are horizontally scalable, which means that it is possible to ha
 So far noSQL databases in comparison to SQL databases can be more advantageous to use, however the decision to use one over the other is dependant on what kind of data we want to store. If we want to persist relations between data, make complex queries, have high transactions and we know that the data will not change so often, then SQL is the way to go. There is no right answer for which one is best, but there is a right answer for which one is best taken in consideration the data model we require.
 
 - Sequelize
+
 Sequelize is an Object Relation Mapper for nodeJS. It maps data relations (tables, columns and lines) into Javascript objects. It allows a programmer to create,find,change,delete data using Javascript methods. It makes the life a programmer much easier for the simple reason that we don't need to run SQL queries.
