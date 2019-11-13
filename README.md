@@ -89,6 +89,6 @@ Sequelize is an Object Relation Mapper for nodeJS. It maps data relations (table
 
 -- Associations between models
 
-Sequelize allows us to establish relationships between models without using SQL relations. Sequelize in-built methods helps us define the type of relationships a model might have. For example,imagine the scenario of a User having many products associated to him. Before syncing our application with the database, we should establish that the User model can have many products, and it is done by doing User.hasMany(Product),( .hasMany() is a method provided by sequelize) . As we say that a user can have many products, we should also say that a product .belongsTo(User)
+Sequelize allows us to establish relationships between models without using SQL relations. Sequelize in-built methods helps us define the type of relationships a model might have with other models. For example,imagine the scenario of a User having many products associated to him. Before syncing our application with the database, we should establish that the User model can have many products, and it is done by doing User.hasMany(Product),( .hasMany() is a method provided by sequelize) . As we say that a user can have many products, we should also say that a product .belongsTo(User)
 
  
