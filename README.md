@@ -86,3 +86,9 @@ So far noSQL databases in comparison to SQL databases can be more advantageous t
 - Sequelize
 
 Sequelize is an Object Relation Mapper for nodeJS. It maps data relations (tables, columns and lines) into Javascript objects. It allows a programmer to create,find,change,delete data using Javascript methods. It makes the life a programmer much easier for the simple reason that we don't need to run SQL queries.
+
+-- Associations between models
+
+Sequelize allows us to establish relationships between models without using SQL relations. Sequelize in-built methods helps us define the type of relationships a model might have. For example,imagine the scenario of a User having many products associated to him. Before syncing our application with the database, we should establish that the User model can have many products, and it is done by doing User.hasMany(Product),( .hasMany() is a method provided by sequelize) . As we say that a user can have many products, we should also say that a product .belongsTo(User)
+
+ 
